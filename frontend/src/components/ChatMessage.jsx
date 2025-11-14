@@ -28,7 +28,7 @@ const ChatMessage = ({ message, isUser }) => {
             : 'backdrop-blur-md bg-white/90 text-gray-800 rounded-tl-md border border-white/50'
         }`}>
           <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
-          <span className={`text-xs mt-2 block ${isUser ? 'text-emerald-100' : 'text-gray-500'}`}>
+          <span className={`text-xs mt-2 block font-medium ${isUser ? 'text-emerald-100' : 'text-gray-600'}`}>
             {new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
           </span>
         </div>

@@ -35,7 +35,7 @@ const ChatInput = ({ onSendMessage, disabled }) => {
               maxHeight: '120px',
             }}
           />
-          <div className="absolute right-3 bottom-3 text-xs text-gray-500">
+          <div className="absolute right-3 bottom-3 text-xs text-gray-600 font-medium">
             {input.length > 0 && `${input.length} chars`}
           </div>
         </div>
